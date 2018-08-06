@@ -1,0 +1,60 @@
+#switch{
+    width: 80%;
+    margin:10px auto;
+}
+#switch:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#switch > .switch-steps, #switch > .switch-content{
+    float:left;
+}
+
+/*
+    STEPS (UL > LI)
+*/
+#switch > .switch-steps > li{
+    padding: 10px;
+    border-left: 1px solid #777;
+    border-bottom: 1px solid #777;
+    border-right: 1px solid #777;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+#switch > .switch-steps > li:hover{
+    background-color: #f0f0f0;
+}
+
+#switch > .switch-steps > li:first-child{
+    border-top:1px solid #777;
+}
+
+#switch > .switch-steps > li.switch-li-active{
+    border-right: 0;        
+    background-color: #fff;
+}
+
+
+
+/*
+    CONTENT (DIV.switch-content)
+*/
+#switch > .switch-content{
+    
+}
+
+#switch > .switch-content > .switch-pane{
+    display: none;
+    border-top: 1px solid #777;
+    border-right: 1px solid #777;
+    border-bottom: 1px solid #777;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#switch > .switch-content > .switch-pane.switch-pane-active{
+    display: block;
+}
